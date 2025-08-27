@@ -10,7 +10,8 @@ This repository provides:
 
 ## Idea / Motivation
 
-Standard multi-head self-attention computes Q, K, V per token and performs O(N²) attention for length N.  
+Standard multi-head self-attention computes Q, K, V per token and performs O(N²) attention for length N.
+Which was making my rented computation expensive to to reduce the computation i added 
 **DeepSeek** reduces this by introducing a small set of learnable *latent tokens* which:
 1. Aggregate information from the full token set (forming compact K/V representation).
 2. Are then attended to by queries from the sequence.
