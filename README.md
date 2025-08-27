@@ -24,23 +24,6 @@ Two important features:
 
 ---
 
-## Architecture (high level)
-
-Input X (N, D)  ──> Linear → Q (N, Dq)
-                 ──> Linear → K_input (N, Dk)
-                 ──> Linear → V_input (N, Dv)
-
-Learnable Latents L (M, Dlatent)
-
-Step A: Latents attend to input to form latent K/V:
-  L' = Attn_cross(L, K_input, V_input)   # latents absorb input info
-
-Step B: Sequence queries attend to latents:
-  Out = Attn(Q, K_latent, V_latent)
-
-Optional: feed-forward block & residuals like a standard transformer.
-
----
 
 ## Benefits
 - Lower compute for long sequences: attention scales O(N*M) instead of O(N²) (M ≪ N)
