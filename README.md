@@ -1,5 +1,5 @@
 # DeepSeek — Latent Attention + RoPE
-An advanced, compute-efficient attention module inspired by *Attention Is All You Need* and Perceiver-like latent mechanisms.
+An advanced, compute-efficient attention module inspired by *Attention Is All You Need* latent(MLA) mechanisms.
 This repository provides:
 - A clear explanation of the idea
 - A compact PyTorch implementation of a **latent attention** block (a single shared latent attention that provides keys/values)
