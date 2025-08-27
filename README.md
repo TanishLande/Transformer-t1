@@ -49,24 +49,11 @@ Optional: feed-forward block & residuals like a standard transformer.
 ---
 
 ## Files
-- `deepseek/latent_attention.py` — core module (PyTorch)
-- `examples/quick_demo.py` — usage demo
+- `train.py` — core module 
 - `README.md` — this document
 
 ---
 
-## Usage (quick)
+## Output
+- Train the model you will see the output for all parameter from perplexity to eval dataset test
 
-```py
-from deepseek.latent_attention import LatentAttentionBlock
-
-block = LatentAttentionBlock(
-    dim=512,           # embedding dimension
-    num_heads=8,
-    num_latents=64,    # much smaller than seq length
-    latent_dim=512,
-    rope=True
-)
-
-x = torch.randn(16, 1024, 512)  # batch, seq_len, dim
-out = block(x)                  # same shape as x
