@@ -52,6 +52,13 @@ Optional: feed-forward block & residuals like a standard transformer.
 ## Files
 - `train.py` — core  
 - `README.md` — this document
+- `fineweb.py` - download the dataset  
+- `hellaswag.py` - testing the sentence completion 
+- `kernal.py` - deepseek module file 
+- `test.py` - checking for output
+- `toknizer.py` - convert the dataset into tokenised dataset
+- `train.py` - actual code and its use case
+- `try.py` - cuda or CPU
 
 ---
 
