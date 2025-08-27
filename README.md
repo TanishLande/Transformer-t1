@@ -50,7 +50,7 @@ Optional: feed-forward block & residuals like a standard transformer.
 ---
 
 ## Files
-- `train.py` — core module 
+- `train.py` — core  
 - `README.md` — this document
 
 ---
